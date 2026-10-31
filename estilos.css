@@ -1,16 +1,249 @@
 * {
+    box-sizing: border-box;
+}
+
+:root {
+    color-scheme: light;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    color: #222b34;
+    background: #fffaf3;
+    font-synthesis: none;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: rgb(54, 12, 12);
+    margin: 0;
+    min-width: 320px;
 }
 
-main {
-  background-color: aliceblue;
-  width: 500px;
-  margin: auto;
-  padding: 10px;
-  border-radius: 5%;  
+.topo {
+    min-height: 76px;
+    padding: 14px max(6vw, 24px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    background: #fff;
+}
+
+.marca {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #18334a;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.marca-icone {
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    border-radius: 50% 50% 50% 8px;
+    background: #f4a62a;
+    color: #18334a;
+}
+
+nav {
+    display: flex;
+    gap: clamp(16px, 3vw, 38px);
+}
+
+nav a {
+    color: #344452;
+    font-size: .95rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    color: #b45e16;
+}
+
+.destaque {
+    min-height: 430px;
+    padding: 72px max(8vw, 24px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background: #18334a;
+    color: #fff;
+}
+
+.destaque-conteudo {
+    max-width: 620px;
+}
+
+.chamada {
+    margin: 0 0 12px;
+    color: #b45e16;
+    font-size: .8rem;
+    font-weight: 800;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+}
+
+.destaque .chamada {
+    color: #ffc45b;
+}
+
+h1,
+h2,
+p {
+    margin-top: 0;
+}
+
+h1 {
+    max-width: 650px;
+    margin-bottom: 18px;
+    font-size: clamp(2.4rem, 5vw, 4.3rem);
+    line-height: 1.06;
+}
+
+.destaque-conteudo > p:not(.chamada) {
+    max-width: 540px;
+    color: #e4ebef;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.botao {
+    min-height: 48px;
+    padding: 14px 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background: #f4a62a;
+    color: #18334a;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.botao:hover,
+.botao:focus-visible {
+    background: #ffc45b;
+}
+
+.destaque-selo {
+    width: 230px;
+    height: 230px;
+    flex: 0 0 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border: 2px solid #ffc45b;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+}
+
+.destaque-selo span {
+    color: #ffc45b;
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+
+.destaque-selo strong {
+    font-size: .95rem;
+    line-height: 1.5;
+}
+
+.secao {
+    padding: 72px max(8vw, 24px);
+}
+
+.sobre {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-bottom: 16px;
+    color: #18334a;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.sobre > p:last-child,
+.contato p:not(.chamada) {
+    max-width: 760px;
+    margin-bottom: 0;
+    color: #52616d;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    background: #f4ead9;
+}
+
+.botao-whatsapp {
+    flex-shrink: 0;
+}
+
+footer {
+    padding: 28px 24px;
+    background: #102536;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 6px;
+    font-weight: 800;
+}
+
+footer small {
+    color: #d5e0e7;
+}
+
+@media (max-width: 650px) {
+    .topo {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .destaque {
+        padding-top: 56px;
+        padding-bottom: 56px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 36px;
+    }
+
+    .destaque-selo {
+        width: 180px;
+        height: 180px;
+        flex-basis: 180px;
+        align-self: center;
+    }
+
+    .secao {
+        padding-top: 52px;
+        padding-bottom: 52px;
+    }
+
+    .contato {
+        align-items: flex-start;
+        flex-direction: column;
+    }
 }

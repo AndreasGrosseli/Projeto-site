@@ -1,26 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso em Video</title>
+    <meta name="description" content="Distribuidora de gás de cozinha com atendimento próximo e pedido fácil pelo WhatsApp.">
+    <title>Gás do Bairro | Entrega de gás</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+    <header class="topo" id="home">
+        <a class="marca" href="#home" aria-label="Gás do Bairro, início">
+            <span class="marca-icone" aria-hidden="true">G</span>
+            <span>Gás do Bairro</span>
+        </a>
+        <nav aria-label="Navegação principal">
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre nós</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
     <main>
-        <header>
-            <h1>Texto</h1>
-            <img class="lado" src="Imagens/curso-em-video-cor.png" alt="Curso em video">
-        </header>
-        <article>
-            <h2>Curso em Video Html</h2>
-            <img class="lado" src="Imagens/curso-html-css.png" alt="Curso Html">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, autem necessitatibus impedit sint ipsam ea hic eveniet reprehenderit qui culpa laborum cupiditate reiciendis voluptatibus eum inventore, molestiae blanditiis fuga. Magni?</p>
-        </article>
-                <article>
-            <h2>Artigo numero 2</h2>
-            <p>Lorem dsfsdfsf ipsum dolor sit, amet consectetur adipisicing elit. Iusto, laborum. Eaque voluptates nobis, esse soluta, fugiat eius natus odio dolorem quae rem dolor maxime ipsum nihil provident odit a pariatur.</p>
-        </article>
+        <section class="destaque" aria-labelledby="titulo-principal">
+            <div class="destaque-conteudo">
+                <p class="chamada">Praticidade para o seu dia a dia</p>
+                <h1 id="titulo-principal">Seu gás, com atendimento de confiança.</h1>
+                <p>Conte com uma equipe pronta para ajudar você a fazer seu pedido de gás de cozinha com facilidade.</p>
+                <a class="botao" href="#contato">Fale com a gente</a>
+            </div>
+            <div class="destaque-selo" aria-hidden="true">
+                <span>GÁS</span>
+                <strong>Boa vizinhança<br>começa com bom atendimento</strong>
+            </div>
+        </section>
+
+        <section class="sobre secao" id="sobre" aria-labelledby="titulo-sobre">
+            <p class="chamada">Sobre nós</p>
+            <h2 id="titulo-sobre">Uma empresa perto de você</h2>
+            <p>A Gás do Bairro é uma distribuidora genérica de gás de cozinha, criada para atender famílias e pequenos negócios com atenção, clareza e praticidade. Entre em contato para consultar disponibilidade, valores e condições de entrega na sua região.</p>
+        </section>
+
+        <section class="contato secao" id="contato" aria-labelledby="titulo-contato">
+            <div>
+                <p class="chamada">Contato</p>
+                <h2 id="titulo-contato">Vamos conversar?</h2>
+                <p>Envie uma mensagem pelo WhatsApp para tirar dúvidas ou fazer seu pedido.</p>
+            </div>
+            <!-- Troque o número abaixo pelo WhatsApp da empresa, com código do país e DDD. -->
+            <a class="botao botao-whatsapp" href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20g%C3%A1s." target="_blank" rel="noopener noreferrer">
+                Chamar no WhatsApp
+            </a>
+        </section>
     </main>
+
+    <footer>
+        <p>Gás do Bairro</p>
+        <small>Atendimento próximo para sua casa e seu negócio.</small>
+    </footer>
 </body>
 </html>
